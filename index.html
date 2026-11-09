@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#11111b">
+    <meta name="description" content="Teste seus conhecimentos de HTML, CSS e JavaScript neste desafio interativo para iniciantes.">
+    <title>Missão Front-end | DEVclub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#" aria-label="DEVclub, início">
+                <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+                <span>DEV<span class="brand-accent">CLUB</span></span>
+            </a>
+            <span class="header-label">APRENDA FAZENDO</span>
+        </header>
+
+        <main>
+            <section class="intro" aria-labelledby="page-title">
+                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> DESAFIO PARA INICIANTES</p>
+                <h1 id="page-title">Sua próxima fase<br>começa <span>aqui.</span></h1>
+                <p class="intro-copy">De tags a interações: teste seus fundamentos de front-end e descubra o que já sabe.</p>
+            </section>
+
+            <section class="quiz-card" aria-label="Quiz de programação">
+                <div class="quiz-topline">
+                    <span class="quiz-category">HTML <span aria-hidden="true">·</span> CSS <span aria-hidden="true">·</span> JS</span>
+                    <span class="question-counter" id="question-counter">PERGUNTA 1 DE 9</span>
+                </div>
+
+                <div class="progress-track" role="progressbar" aria-label="Progresso do desafio" aria-valuemin="0"
+                    aria-valuemax="9" aria-valuenow="0">
+                    <span class="progress-fill" id="progress-fill"></span>
+                </div>
+
+                <div id="quiz-content" aria-live="polite">
+                    <p class="question-kicker" id="question-topic">FUNDAMENTOS</p>
+                    <h2 class="question-title" id="question-text"></h2>
+                    <div class="answer-list" id="answer-list"></div>
+                    <div class="feedback" id="feedback" role="status" aria-live="polite" hidden></div>
+                    <button class="next-button" id="next-button" type="button" hidden>
+                        <span>Próxima pergunta</span><span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <section class="result" id="result" aria-live="polite" hidden>
+                    <p class="question-kicker">MISSÃO CONCLUÍDA</p>
+                    <div class="result-score" id="result-score" aria-label="Pontuação"></div>
+                    <h2 class="result-title" id="result-title"></h2>
+                    <p class="result-copy" id="result-copy"></p>
+                    <button class="restart-button" id="restart-button" type="button">Tentar novamente <span aria-hidden="true">↻</span></button>
+                </section>
+
+                <div class="card-footer">
+                    <span><span class="sparkle" aria-hidden="true">✦</span> UM PASSO DE CADA VEZ</span>
+                    <span>SEM PRESSA. SÓ EVOLUÇÃO.</span>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <span>DEVCLUB <span aria-hidden="true">/</span> MISSÃO FRONT-END</span>
+            <span>FEITO PARA QUEM ESTÁ COMEÇANDO</span>
+        </footer>
+    </div>
+</body>
+
+</html>
